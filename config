@@ -10,14 +10,14 @@ account gmail
 	from doron.behar@gmail.com
 	user doron.behar
 	auth plain
-	passwordeval gkeyring --id 35 --output secret
+	passwordeval secret-tool lookup user doron.behar@gmail.com
 
 account vps
 	host smtp.doronbehar.com
 	from me@doronbehar.com
 	user doron
 	auth plain
-	passwordeval gkeyring --id 36 --output secret
+	passwordeval secret-tool lookup user me@doronbehar.com
 
 account default : gmail
 
