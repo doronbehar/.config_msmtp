@@ -7,21 +7,21 @@ defaults
 account gmail
 	host smtp.gmail.com
 	port 587
-	from Doron Behar doron.behar@gmail.com
+	from doron.behar@gmail.com
 	user doron.behar
 	auth plain
 	passwordeval env -u DBUS_SESSION_BUS_ADDRESS secret-tool lookup user doron.behar@gmail.com
 
 account gandi
 	host mail.gandi.net
-	from Doron Behar me@doronbehar.com
+	from me@doronbehar.com
 	user me@doronbehar.com
 	auth plain
 	passwordeval env -u DBUS_SESSION_BUS_ADDRESS secret-tool lookup user me@doronbehar.com
 
 account technion
 	host smtp.office365.com
-	from דורון בכר doronbehar@campus.technion.ac.il
+	from doronbehar@campus.technion.ac.il
 	user doronbehar@campus.technion.ac.il
 	auth plain
 	passwordeval env -u DBUS_SESSION_BUS_ADDRESS secret-tool lookup user doronbehar@campus.technion.ac.il
