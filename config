@@ -19,6 +19,13 @@ account gandi
 	auth plain
 	passwordeval env -u DBUS_SESSION_BUS_ADDRESS secret-tool lookup user me@doronbehar.com
 
+account technion
+	host smtp.office365.com
+	from דורון בכר doronbehar@campus.technion.ac.il
+	user doronbehar@campus.technion.ac.il
+	auth plain
+	passwordeval env -u DBUS_SESSION_BUS_ADDRESS secret-tool lookup user doronbehar@campus.technion.ac.il
+
 account default : gmail
 
 # vim:ft=msmtp
