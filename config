@@ -7,14 +7,14 @@ defaults
 account gmail
 	host smtp.gmail.com
 	port 587
-	from doron.behar@gmail.com
+	from Doron Behar doron.behar@gmail.com
 	user doron.behar
 	auth plain
 	passwordeval secret-tool lookup user doron.behar@gmail.com
 
 account vps
 	host smtp.doronbehar.com
-	from me@doronbehar.com
+	from Doron Behar me@doronbehar.com
 	user doron
 	auth plain
 	passwordeval secret-tool lookup user me@doronbehar.com
