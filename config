@@ -12,10 +12,10 @@ account gmail
 	auth plain
 	passwordeval env -u DBUS_SESSION_BUS_ADDRESS secret-tool lookup user doron.behar@gmail.com
 
-account vps
-	host smtp.doronbehar.com
+account gandi
+	host mail.gandi.net
 	from Doron Behar me@doronbehar.com
-	user doron
+	user me@doronbehar.com
 	auth plain
 	passwordeval env -u DBUS_SESSION_BUS_ADDRESS secret-tool lookup user me@doronbehar.com
 
