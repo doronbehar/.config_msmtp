@@ -23,7 +23,8 @@ account technion
 	host smtp.office365.com
 	from doronbehar@campus.technion.ac.il
 	user doronbehar@campus.technion.ac.il
-	auth plain
+	auth on
+	port 587
 	passwordeval env -u DBUS_SESSION_BUS_ADDRESS secret-tool lookup user doronbehar@campus.technion.ac.il
 
 account default : gmail
